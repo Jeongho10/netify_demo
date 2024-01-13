@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡單的網頁範例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #welcome-message {
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>歡迎來到簡單的網頁範例</h1>
+    <p id="welcome-message">點擊下面的按鈕以改變歡迎消息！</p>
+    <img src="https://via.placeholder.com/300" alt="示例圖片">
+    <button onclick="changeWelcomeMessage()">點擊我</button>
+
+    <script>
+        function changeWelcomeMessage() {
+            var welcomeMessage = document.getElementById('welcome-message');
+            welcomeMessage.innerHTML = '你點擊了按鈕！歡迎互動。';
+        }
+    </script>
+</body>
+</html>
